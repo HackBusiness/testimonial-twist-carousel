@@ -52,6 +52,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        testimonial: {
+          background: "rgba(255, 255, 255, 0.02)",
+          border: "rgba(255, 255, 255, 0.08)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -67,10 +71,16 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        scroll: "scroll 40s linear infinite",
       },
     },
   },
